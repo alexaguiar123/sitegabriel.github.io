@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Delgado - Montador de Móveis</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Verde claro */
+        }
+        .header {
+            background-color: #388e3c; /* Verde escuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section, .about-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover, .about-section:hover {
+            transform: scale(1.02);
+        }
+        .section h2, .about-section h2 {
+            color: #388e3c; /* Verde escuro */
+            margin-top: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact input, .contact textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .contact button {
+            background-color: #388e3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .contact button:hover {
+            background-color: #2c6c2f;
+        }
+        .whatsapp-link {
+            display: inline-block;
+            background-color: #25D366; /* Verde do WhatsApp */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp-link:hover {
+            background-color: #128C7E;
+        }
+        .footer {
+            background-color: #388e3c;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .about-section {
+            background-color: #ffffff; /* Cor de fundo branca */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            line-height: 1.6;
+        }
+
+        /* Media Queries para Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .contact input, .contact textarea {
+                font-size: 0.9em;
+            }
+            .contact button {
+                font-size: 0.9em;
+                padding: 8px 12px;
+            }
+            .whatsapp-link {
+                font-size: 0.9em;
+                padding: 8px 12px;
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header, .footer {
+                padding: 15px;
+            }
+            .contact form {
+                flex-direction: column;
+            }
+            .contact input, .contact textarea {
+                font-size: 0.85em;
+                padding: 8px;
+            }
+            .contact button {
+                font-size: 0.85em;
+                padding: 8px 10px;
+            }
+            .whatsapp-link {
+                font-size: 0.85em;
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Gabriel Delgado - Montador de Móveis</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Serviços Oferecidos</h2>
+            <p>Gabriel Delgado é um especialista em montagem e desmontagem de móveis, oferecendo serviços de alta qualidade e eficiência para garantir que seus móveis sejam montados e remontados com perfeição.</p>
+            <p><strong>Contato:</strong> <a href="https://wa.me/5515996575171?text=Olá%2C%20eu%20vi%20seu%20anúncio%20e%20estou%20interessado%20nos%20seus%20serviços.%20Gabriel%20Delgado%20é%20um%20especialista%20em%20montagem%20e%20desmontagem%20de%20móveis%2C%20oferecendo%20serviços%20de%20alta%20qualidade%20e%20eficiência.%20Gostaria%20de%20saber%20mais%20sobre%20o%20que%20você%20pode%20fazer%20por%20mim." class="whatsapp-link" target="_blank">Enviar Mensagem no WhatsApp</a></p>
+        </div>
+
+        <div class="about-section">
+            <h2>Sobre Gabriel Delgado</h2>
+            <p>Gabriel Delgado é um especialista com vasta experiência em montagem e desmontagem de móveis. Sua trajetória é marcada por um compromisso inabalável com a qualidade e a precisão, tornando-o a escolha ideal para qualquer projeto relacionado a móveis.</p>
+            <p>Iniciando sua carreira há alguns anos, Gabriel acumulou um extenso conhecimento e habilidades que se refletem em seu trabalho impecável. Durante esse tempo, ele se especializou em uma ampla gama de móveis, desde peças sofisticadas e complexas até opções mais simples, sempre assegurando resultados excepcionais. Sua expertise abrange armários, estantes, camas e sofás, e ele é altamente capacitado para lidar com diferentes marcas e estilos.</p>
+            <p>Além de seu profundo conhecimento técnico, Gabriel é conhecido por sua abordagem meticulosa e organizada. Ele trata cada projeto com a máxima atenção aos detalhes, desde a desmontagem cuidadosa até a montagem final, garantindo que cada peça seja montada com precisão e estabilidade. Sua habilidade em resolver problemas e sua capacidade de se adaptar a diferentes cenários e desafios são qualidades que o destacam no mercado.</p>
+            <p>Gabriel Delgado não apenas executa seu trabalho com maestria, mas também prioriza a satisfação de seus clientes. Seu atendimento personalizado e sua dedicação em superar expectativas garantem um serviço de montagem e desmontagem que vai além do convencional.</p>
+            <p>Se você procura um profissional confiável e experiente para cuidar de seus móveis, Gabriel Delgado é a escolha certa. Com ele, você pode ter a certeza de que seu mobiliário será montado e desmontado com a mais alta qualidade e eficiência.</p>
+        </div>
+
+        <div class="section contact">
+            <h2>Entre em Contato</h2>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="button" onclick="sendMessage()">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Gabriel Delgado. Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            const whatsappUrl = `https://wa.me/5515996575171?text=Olá%2C%20meu%20nome%20é%20${encodeURIComponent(name)}.%
